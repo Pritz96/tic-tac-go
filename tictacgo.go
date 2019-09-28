@@ -56,8 +56,9 @@ turns:
 		if hasAnyoneWonYet(grid) {
 			fmt.Println("Player " + playerStamp + " has won")
 			break turns
-		} else if tiedGame(grid) {
-			fmt.Println("The game is tied")
+			// } else if tiedGame(grid) {
+			// 	fmt.Println("The game is tied")
+			// }
 		} else {
 			i = i + 1
 		}
