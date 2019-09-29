@@ -2,7 +2,7 @@
 
 __tic-tac-go is tic-tac-toe written in Go__
 
-__Issues:__ Currently doesn't handle tied games well
+__Issues:__ 
 
 __Usage:__
 To use run *go run tictacgo.go*
