@@ -2,8 +2,6 @@
 
 __tic-tac-go is tic-tac-toe written in Go__
 
-__Issues:__ 
-
 __Usage:__
 To use run *go run tictacgo.go*
 
