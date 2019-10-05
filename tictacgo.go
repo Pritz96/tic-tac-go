@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-var grid [3][3]string
+var grid = [3][3]string{{"-", "-", "-"}, {"-", "-", "-"}, {"-", "-", "-"}}
 var row int
 var col int
 var playerStamp string
