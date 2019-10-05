@@ -56,7 +56,7 @@ turns:
 		if hasAnyoneWonYet(grid) {
 			fmt.Println("Player " + playerStamp + " has won")
 			break turns
-		} else if tiedGame(grid) {
+		} else if allPositionsFilled(grid) {
 			fmt.Println("The game is tied")
 			break turns
 		} else {
@@ -78,7 +78,7 @@ func isPositionAlreadyFilled(grid [3][3]string, row, col int) bool {
 	return false
 }
 
-func tiedGame(grid [3][3]string) bool {
+func allPositionsFilled(grid [3][3]string) bool {
 	count := 0
 	for j := 0; j < 3; j++ {
 		if isPositionAlreadyFilled(grid, 0, j) && isPositionAlreadyFilled(grid, 1, j) && isPositionAlreadyFilled(grid, 2, j) {
