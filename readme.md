@@ -1,9 +1,7 @@
-# tic-tac-go
-## tic-tac-go is CLI tic-tac-toe game written in Go
-
+# **tic-tac-go**
+### tic-tac-go is CLI tic-tac-toe game written in Go
 ![tic-tac-go logo](tictacgo.svg)
-
-## Usage:
+## **Usage:**
 
 To use run `go run tictacgo.go`
 
@@ -15,7 +13,7 @@ The same happens for Player **O**
 
 When a Player gets 3 in a row they will be notified that they have won and the game will end
 
-## Grid layout
+## **Grid layout**
 |-**(0,0)**-|-**(0,1)**-|-**(0,2)**-|<br/>
 |-**(1,0)**-|-**(1,1)**-|-**(1,2)**-|<br/>
 |-**(2,0)**-|-**(2,1)**-|-**(2,2)**-|
