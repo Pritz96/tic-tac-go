@@ -24,10 +24,10 @@ turns:
 
 		validRow:
 			for {
-				fmt.Println("Player " + playerStamp + " enter your row: ")
+				fmt.Println("Player " + playerStamp + " enter your row number (0, 1, or 2): ")
 				fmt.Scanln(&row)
 				if row < 0 || row >= 3 {
-					fmt.Println("Row is not 0, 1 or 2, please re-enter row")
+					fmt.Println("Please re-enter a valid row number")
 				} else {
 					break validRow
 				}
@@ -35,17 +35,17 @@ turns:
 
 		validCol:
 			for {
-				fmt.Println("Player " + playerStamp + " enter your col: ")
+				fmt.Println("Player " + playerStamp + " enter your column number (0, 1, or 2): ")
 				fmt.Scanln(&col)
 				if col < 0 || col >= 3 {
-					fmt.Println("Col is not 0, 1 or 2, please re-enter col")
+					fmt.Println("Please re-enter a valid column number")
 				} else {
 					break validCol
 				}
 			}
 
 			if isPositionAlreadyFilled(grid, row, col) {
-				fmt.Println("Position is already filled in the grid, re-enter row and col")
+				fmt.Println("This position is already filled in the grid, re-enter a non filled row and column number")
 			} else {
 				grid[row][col] = playerStamp
 				fmt.Println(printGrid(grid))
@@ -54,7 +54,7 @@ turns:
 
 		}
 		if hasAnyoneWonYet(grid) {
-			fmt.Println("Player " + playerStamp + " has won")
+			fmt.Println("Player " + playerStamp + " has won!")
 			break turns
 		} else if allPositionsFilled(grid) {
 			fmt.Println("The game is tied")
