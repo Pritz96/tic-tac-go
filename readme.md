@@ -1,18 +1,21 @@
+# tic-tac-go
+## tic-tac-go is CLI tic-tac-toe game written in Go
+
 ![tic-tac-go logo](tictacgo.svg)
 
-__tic-tac-go is tic-tac-toe written in Go__
+## Usage:
 
-__Usage:__
-To use run *go run tictacgo.go*
+To use run `go run tictacgo.go`
 
-Player __X__ will be asked to enter a row for which they type either 0, 1 or 2<br/>
-Player __X__ will be asked to enter a col for which they type either 0, 1 or 2<br/>
-An __X__ is then placed in the (row,col) position of the grid
+Player **X** will be asked to enter a row number for which they type either 0, 1 or 2<br/>
+Player **X** will be asked to enter a column number for which they type either 0, 1 or 2<br/>
+An **X** is then placed in the (row, column) position of the grid
 
-The same happens for Player __O__
+The same happens for Player **O**
 
--(0,0)-|-(0,1)-|-(0,2)-<br/>
--(1,0)-|-(1,1)-|-(1,2)-<br/>
--(2,0)-|-(2,1)-|-(2,2)-
+When a Player gets 3 in a row they will be notified that they have won and the game will end
 
-When a Player gets 3 in a row they will be notified that they have won.
+## Grid layout
+|-**(0,0)**-|-**(0,1)**-|-**(0,2)**-|<br/>
+|-**(1,0)**-|-**(1,1)**-|-**(1,2)**-|<br/>
+|-**(2,0)**-|-**(2,1)**-|-**(2,2)**-|
